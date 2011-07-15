@@ -4,7 +4,7 @@ wp_install() {
 	unzip latest.zip
 	rm -rf __MACOSX latest.zip
 	cp -rf ./wordpress/* ./
-	rm -rf ./wordpress/
+	rm -rf ./wordpress/ ./wp-content/plugins/hello.php
 	mkdir ./wp-content/uploads/
 	mv wp-config-sample.php wp-config.php
 	touch .htaccess
