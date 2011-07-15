@@ -7,7 +7,13 @@ wp_install() {
 	rm -rf ./wordpress/
 	mkdir ./wp-content/uploads/
 	mv wp-config-sample.php wp-config.php
-	touch .htaccess	
+	touch .htaccess
+        mate .
 	mate wp-config.php
 	open https://api.wordpress.org/secret-key/1.1/salt/
+}
+
+vhosts() {
+	mate /etc/hosts
+	mate /etc/apache2/extra/httpd-vhosts.conf
 }
