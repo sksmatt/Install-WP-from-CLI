@@ -1,3 +1,5 @@
+# Add to ~/.bash_profile
+
 wp_install() {
 	latest="http://wordpress.org/latest.zip"
 	curl -O $latest 
