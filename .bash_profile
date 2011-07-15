@@ -2,8 +2,7 @@ wp_install() {
 	latest="http://wordpress.org/latest.zip"
 	curl -O $latest 
 	unzip latest.zip
-	rm -rf __MACOSX
-	rm -rf latest.zip
+	rm -rf __MACOSX latest.zip
 	cp -rf ./wordpress/* ./
 	rm -rf ./wordpress/
 	mkdir ./wp-content/uploads/
