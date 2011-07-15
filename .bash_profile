@@ -8,7 +8,6 @@ wp_install() {
 	mkdir ./wp-content/uploads/
 	mv wp-config-sample.php wp-config.php
 	touch .htaccess
-        mate .
 	mate wp-config.php
 	open https://api.wordpress.org/secret-key/1.1/salt/
 }
