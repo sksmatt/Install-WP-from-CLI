@@ -6,13 +6,15 @@ wp_install() {
 	unzip latest.zip
 	rm -rf __MACOSX latest.zip
 	cp -rf ./wordpress/* ./
-	rm -rf ./wordpress/ ./wp-content/plugins/hello.php
+	rm -rf ./wordpress/ ./wp-content/plugins/hello.php ./readme.html
 	mkdir ./wp-content/uploads/
 	mv wp-config-sample.php wp-config.php
-	touch .htaccess
+	touch htaccess.txt robots.txt
 	mate wp-config.php
 	open https://api.wordpress.org/secret-key/1.1/salt/
 }
+
+# Launch virtual hosts files:
 
 vhosts() {
 	mate /etc/hosts
